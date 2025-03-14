@@ -63,12 +63,12 @@
     
     <div class="glass-container" id="container">
         <div class="label">Тест</div>
-        <div class="button" onclick="redirectWithAnimation()">недо бот поддержки</div>
-        <div class="button">сайт для статей</div>
+        <div class="button" onclick="redirectWithAnimation('https://perdonus.github.io/Test/')">недо бот поддержки</div>
+        <div class="button" onclick="redirectWithAnimation('https://perdonus.github.io/Test3/')">сайт для статей</div>
     </div>
 
     <script>
-        function redirectWithAnimation() {
+        function redirectWithAnimation(url) {
             const container = document.getElementById('container');
             const body = document.body;
             container.style.opacity = '0';
@@ -76,7 +76,7 @@
             body.style.opacity = '0';
 
             setTimeout(() => {
-                window.location.href = 'https://perdonus.github.io/Test/';
+                window.location.href = url;
             }, 500); // Match the duration of the animation
         }
     </script>
